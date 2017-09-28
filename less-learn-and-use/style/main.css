@@ -1,0 +1,10 @@
+@charset "utf-8";
+body {
+  background: red;
+}
+/*可编译的注释*/
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+}

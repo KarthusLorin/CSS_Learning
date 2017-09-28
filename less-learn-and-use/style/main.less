@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body{
+    background: red;
+}
+
+/*可编译的注释*/
+//不可编译的注释
+
+//less中的变量
+//less中 想声明变量的话，一定要用@开头，例如：@变量名:值;
+@test_width:300px;
+
+.box{
+    width: @test_width;
+    height: @test_width;
+    background-color: yellow;
+}
