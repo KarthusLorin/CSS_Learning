@@ -15,4 +15,45 @@ body{
     width: @test_width;
     height: @test_width;
     background-color: yellow;
+
+    .border;
 }
+
+//混合
+.border{
+    border:solid 5px pink;
+}
+
+//混合 - 可带参数
+.border_02(@border_width){
+    border: solid yello @border_width;
+}
+
+.test_hunhe{
+    .border_02(30px);
+}
+
+//混合 - 默认带值
+.border_03(@border_width: 10px){
+    border: solid green @border_width;
+}
+
+.test_hunhe_03{
+    .border_03()
+}
+
+.border_radius(@radius: 5px){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.radius_test{
+    width: 100px;
+    height: 40px;
+    background-color: green;
+
+    .border_radius(10px);
+}
+
+
