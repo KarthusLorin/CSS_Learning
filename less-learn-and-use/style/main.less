@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-body{
-    background: red;
-}
-
 /*可编译的注释*/
 //不可编译的注释
 
@@ -54,4 +50,60 @@ body{
     background-color: green;
 
     .border_radius(10px);
+}
+
+//匹配模式
+.triangle(top,@w:5px,@c:#ccc){
+    border-width: @w;
+    border-color: transparent transparent @c transparent;
+    border-style: dashed dashed solid dashed;
+}
+
+.triangle(bottom,@w:5px,@c:#ccc){
+    border-width: @w;
+    border-color: @c transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+}
+
+.triangle(left,@w:5px,@c:#ccc){
+    border-width: @w;
+    border-color: transparent @c  transparent transparent;
+    border-style: dashed solid dashed dashed;
+}
+
+.triangle(right,@w:5px,@c:#ccc){
+    border-width: @w;
+    border-color: transparent transparent transparent @c;
+    border-style: dashed dashed dashed solid;
+}
+
+.triangle(@_,@w:5px,@c:#ccc){
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.sanjiao{
+    .triangle(right, 100px);
+}
+
+//匹配模式 - 定位
+
+.pos(r){
+    position: relative;
+}
+
+.pos(a){
+    position: absolute;
+}
+
+.pos(f){
+    position: fixed;
+}
+
+.pipe{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    .pos(r);
 }

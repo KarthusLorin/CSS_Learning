@@ -1,7 +1,4 @@
 @charset "utf-8";
-body {
-  background: red;
-}
 /*可编译的注释*/
 .box {
   width: 300px;
@@ -25,4 +22,18 @@ body {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+.sanjiao {
+  border-width: 100px;
+  border-color: transparent transparent transparent #cccccc;
+  border-style: dashed dashed dashed solid;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.pipe {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  position: relative;
 }
