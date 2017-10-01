@@ -115,3 +115,35 @@
     width: (@test_01 - 20) * 5;
     color: #ccc - 10
 }
+
+//嵌套
+.list{
+    width: 600px;
+    margin: 30px auto;
+    padding: 0;
+    list-style: none;
+
+    li{
+        height: 30px;
+        line-height: 30px;
+        background-color: pink;
+        margin-bottom: 5px;
+        padding: 0 10px;
+    }
+
+    //尽量少嵌套
+    a{
+        float: left;
+
+        //伪类选择器
+        //& 代表他的上一层选择器
+        &:hover{
+            color: red;
+        }
+    }
+
+    span{
+        float: right;
+    }
+}
+
