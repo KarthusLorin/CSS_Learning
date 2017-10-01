@@ -63,3 +63,6 @@
 .list span {
   float: right;
 }
+.test_arguments {
+  border: 40px #ff0000 solid;
+}
