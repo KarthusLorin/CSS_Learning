@@ -66,3 +66,9 @@
 .test_arguments {
   border: 40px #ff0000 solid;
 }
+.test_03 {
+  width: calc(300px - 30px);
+}
+.test_important {
+  border: solid #008000 10px !important;
+}

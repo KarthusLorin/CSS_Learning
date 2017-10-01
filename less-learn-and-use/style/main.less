@@ -155,3 +155,15 @@
 .test_arguments{
     .border_arg(40px);
 }
+
+//避免编译，使用~
+
+.test_03{
+    width: ~'calc(300px - 30px)';
+}
+
+//!important关键字
+
+.test_important{
+    .border_03() !important;
+}
