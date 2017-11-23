@@ -1,0 +1,12 @@
+/* Multiple borders */
+
+/* outline */
+
+div {
+    width: 100px;
+    height: 60px;
+    margin: 25px;
+    background: yellowgreen;
+    border: 10px solid #655;
+    outline: 5px solid deeppink;
+}
